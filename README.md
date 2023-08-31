@@ -34,3 +34,27 @@ Desde la terminal de comandos seguir los siguientes pasos:
 * Este script corre en el entorno local en el puerto 8080,
 
 		http://localhost:8080/ner
+
+* Ejemplo para usar el endpoint:
+
+	curl -X POST -H "Content-Type: application/json" -d '{"oraciones":["Apple está buscando comprar una startup del Reino Unido por mil millones de dólares.", "San Francisco considera prohibir los robots de entrega en la acera."]}' http://127.0.0.1:8080/ner
+
+* Respuesta:
+
+{
+  "resultado": [
+    {
+      "entidades": {
+        "Apple": "ORG",
+        "Reino Unido": "LOC"
+      },
+      "oraci\u00f3n": "Apple est\u00e1 buscando comprar una startup del Reino Unido por mil millones de d\u00f3lares."
+    },
+    {
+      "entidades": {
+        "San Francisco": "LOC"
+      },
+      "oraci\u00f3n": "San Francisco considera prohibir los robots de entrega en la acera."
+    }
+  ]
+}
