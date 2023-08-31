@@ -10,10 +10,14 @@ Desde la terminal de comandos seguir los siguientes pasos:
 		https://github.com/alexrods/ner-api.git  
 
 * Ve al directorio del repositorio
-		cd ner-api
+		```
+  		cd ner-api
+  		```
 
 * Crear un entorno virtual en python
+		```
 		python3 -m venv venv
+  		```
 
 * Activar el entorno virtual 
 		
@@ -36,9 +40,9 @@ Desde la terminal de comandos seguir los siguientes pasos:
 		http://localhost:8080/ner
 
 * Ejemplo para usar el endpoint:
-
-	curl -X POST -H "Content-Type: application/json" -d '{"oraciones":["Apple está buscando comprar una startup del Reino Unido por mil millones de dólares.", "San Francisco considera prohibir los robots de entrega en la acera."]}' http://127.0.0.1:8080/ner
-
+```
+	curl -X POST -H "Content-Type: application/json" -d '{"oraciones":["Apple está buscando comprar una startup del Reino Unido por mil millones de dólares.", "San Francisco 		considera prohibir los robots de entrega en la acera."]}' http://127.0.0.1:8080/ner
+```
 * Respuesta:
 
 {
