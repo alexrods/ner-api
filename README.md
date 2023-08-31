@@ -4,10 +4,10 @@ API REST que recibe una lista de oraciones en español y devuelva una lista de l
 
 ## Instrucciones de uso
 * Crear un entorno virtual en python
-		python -m venv venv
+		python3 -m venv venv
 
 * Clonar el repositorio
-        https://github.com/alexrods/ner-api.git 
+        	https://github.com/alexrods/ner-api.git 
 
 * Activar el entorno virtual 
 		
